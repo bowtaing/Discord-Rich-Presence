@@ -4,9 +4,6 @@ Citizen.CreateThread(function()
         Citizen.Wait(5*1000)
 
         SetDiscordAppId(putyourdiscordappidhere)
-        
-        -- uno is on Vespucci Blvd
-        SetRichPresence( GetPlayerName(source) .. " is on " .. GetStreetNameFromHashKey( GetStreetNameAtCoord(table.unpack( GetEntityCoords(player) ) ) ) )
 
         SetDiscordRichPresenceAsset("putyourrichpresenceassethere")
         SetDiscordRichPresenceAssetText(GetPlayerName(source))
