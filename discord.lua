@@ -6,10 +6,23 @@ Citizen.CreateThread(function()
         SetDiscordAppId(putyourdiscordappidhere)
 
         SetDiscordRichPresenceAsset("putyourrichpresenceassethere")
-        SetDiscordRichPresenceAssetText(GetPlayerName(source))
+        SetDiscordRichPresenceAssetText(putservernamehere)
 
         SetDiscordRichPresenceAssetSmall("putyoursmallrichpresenceassethere")    
         SetDiscordRichPresenceAssetSmallText("Health: ".. (GetEntityHealth(player) - 100) )
 
+        SetDiscordRichPresenceAction(0, discord.button1.text, discord.button1.url)
+		SetDiscordRichPresenceAction(1, discord.button2.text, discord.button2.url)
+
     end
 end)
+
+discord.button1 = {
+    text = 'Join The Discord',
+    url = 'putneverendingdiscordinvitelinkhere'
+}
+
+discord.button2 = {
+    text = 'Join The Server',
+    url = 'putcfxconnecthere' -- cfx connect can be found when you click on your server on FiveM
+}
