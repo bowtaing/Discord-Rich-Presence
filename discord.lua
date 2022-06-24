@@ -11,18 +11,9 @@ Citizen.CreateThread(function()
         SetDiscordRichPresenceAssetSmall("putyoursmallrichpresenceassethere")    
         SetDiscordRichPresenceAssetSmallText("Health: ".. (GetEntityHealth(player) - 100) )
 
-        SetDiscordRichPresenceAction(0, discord.button1.text, discord.button1.url)
-		SetDiscordRichPresenceAction(1, discord.button2.text, discord.button2.url)
+        -- this has to start with "fivem://connect/" or "https://"
+        SetDiscordRichPresenceAction(0, "putdesiremessagehere", "https://")
+        SetDiscordRichPresenceAction(1, "putdesiremessagehere", "fivem://connect/")
 
     end
 end)
-
-discord.button1 = {
-    text = 'Join The Discord',
-    url = 'putneverendingdiscordinvitelinkhere'
-}
-
-discord.button2 = {
-    text = 'Join The Server',
-    url = 'putcfxconnecthere' -- cfx connect can be found when you click on your server on FiveM
-}
